@@ -1,4 +1,4 @@
-strings_test: ctrings.o main.o
+all: ctrings.o main.o
 	gcc main.o ctrings.o -o strings_test
 
 main.o: main.c ctrings.h
@@ -10,3 +10,6 @@ ctrings.o: ctrings.c ctrings.h
 clean:
 	rm *.o
 	rm *.~
+
+run: all
+	./strings_test
