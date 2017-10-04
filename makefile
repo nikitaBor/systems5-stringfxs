@@ -9,7 +9,6 @@ ctrings.o: ctrings.c ctrings.h
 
 clean:
 	rm *.o
-	rm *.~
 
 run: all
 	./strings_test

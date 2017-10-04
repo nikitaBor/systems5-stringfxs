@@ -34,8 +34,7 @@ int mystrcmp( char *s1, char *s2 ){
     s2++;
   }
   
-  int res = *s1 - *s2;
-  return (res > 0) - (res < 0);
+  return *s1 - *s2;
 }
 
 char * mystrchr( char *s, char c ){  
